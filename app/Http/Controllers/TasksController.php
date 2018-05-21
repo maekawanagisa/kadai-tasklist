@@ -33,7 +33,7 @@ class TasksController extends Controller
     {
         $task = new Task;
         
-        return viwe("task.create", [
+        return view("tasks.create", [
             "task" => $task,
             ]);
     }

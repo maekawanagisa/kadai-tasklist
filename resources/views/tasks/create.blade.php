@@ -7,13 +7,20 @@
  
  {!! Form::model($task, ["route" => "tasks.store"]) !!}
   
+  <div class="form-group">
   {!! Form::label("status", "ステータス:") !!}
-  {!! Form::text("status") !!}
+  {!! Form::text("status",null, ["class" => "form-control"]) !!}
+  </div>
   
+  <div class="form-group">
   {!! Form::label("content", "タスク管理:") !!}
-  {!! Form::text("content") !!}
+  {!! Form::text("content",null,["class" => "form-control"]) !!}
   
-  {!! Form::submit("投稿") !!}
+  
+  
+  
+  </div>
+  {!! Form::submit("投稿",null,["class" => "btn btn-primary"]) !!}
   
  {!! Form::close() !!}
 @endsection
